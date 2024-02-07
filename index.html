@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knights RPG</title>
+    </head>
+    <body>
+        <form id="knight-form">
+            <label for="knight-name">Name</label>
+            <input type="text" id="knight-name" title="Name">
+            <select name="fighter-class" id="fighter-class" form="knight-form">
+                <option value="none" selected disabled hidden>Select a Class</option>
+                <option value="Knight">Knight</option>
+                <option value="Mage">Mage</option>
+                </select>
+            <select name="fighter-weapon" id="fighter-weapon" form="knight-form">
+                <option value="none" selected disabled hidden>Select a Weapon</option>
+                <option value="Sword">Sword</option>
+                <option value="Lance">Lance</option>
+                <option value="Magic">Magic (Regular)</option>
+                </select>
+                <!-- <input type="text" id="knight-weapon" title="Weapon">  -->
+            <input type="submit">
+        </form>
+        <div id="fighter-container">
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
